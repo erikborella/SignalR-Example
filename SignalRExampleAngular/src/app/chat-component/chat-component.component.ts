@@ -20,10 +20,9 @@ export class ChatComponentComponent implements OnInit {
 
   public ngOnInit(): void {
     this.signalRService.startConnection();
-    this.signalRService.addOnReceiveMessageListener((message: ChatMessage) => {
-      
-      this.messages.push(message);
 
+    this.signalRService.addOnReceiveMessageListener((message: ChatMessage) => {
+      this.messages.push(message);
     });
   }
 

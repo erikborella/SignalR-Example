@@ -30,6 +30,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
 app.MapHub<ChatHub>("/chat");
 
 app.Run();

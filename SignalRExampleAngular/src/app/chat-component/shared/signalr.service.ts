@@ -13,6 +13,7 @@ export class SignalrService {
   public startConnection() {
     this.hubConnection = new HubConnectionBuilder()
       .withUrl(this.CHAT_URL)
+      .withAutomaticReconnect()
       .build();
 
     this.hubConnection.start();
