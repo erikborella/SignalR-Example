@@ -1,0 +1,20 @@
+<div class="chat-container">
+    <div class="chat-header">
+        <h1>SignalR Chat</h1>
+    </div>
+    <div class="chat-messages">
+        <div *ngFor="let message of messages">
+            <div class="chat-message-header">
+                <span class="chat-message-date">{{message.date | date:'short'}}</span>
+                <span class="chat-message-sender">{{message.user}}</span>
+              </div>
+              <div class="chat-message-content">
+                {{message.message}}
+              </div>
+        </div>
+    </div>
+    <div class="chat-input-container">
+        <textarea #messageInput placeholder="Digite sua mensagem..." class="chat-input"></textarea>
+        <button (click)="onSendMessageButtonClick()" class="chat-send-button">Enviar</button>
+    </div>
+</div>

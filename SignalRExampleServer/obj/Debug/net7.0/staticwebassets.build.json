@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "mT6kG0P9irsaFUceQTKxSX1Stja7R0pT+eUdW8Ip6Pk=",
+  "Source": "SignalRExampleServer",
+  "BasePath": "_content/SignalRExampleServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

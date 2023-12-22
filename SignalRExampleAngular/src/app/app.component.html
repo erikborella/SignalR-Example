@@ -1,0 +1,8 @@
+<div *ngIf="!isNameInformed">
+  <input #nameInput placeholder="Digite seu nome" class="name-input">
+  <button (click)="onNameButtonPress()" class="user-enter-button">Entrar</button>
+</div>
+
+<div *ngIf="isNameInformed">
+  <app-chat-component [name]="name"></app-chat-component>
+</div>
